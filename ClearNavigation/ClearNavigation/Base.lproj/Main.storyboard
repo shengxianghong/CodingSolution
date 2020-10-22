@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o1W-u7-8wJ">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Push-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdC-mL-oeI">
+                                <rect key="frame" x="172" y="360" width="46" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="QZn-Bx-8y8" kind="popoverPresentation" popoverAnchorView="BdC-mL-oeI" id="JfO-qf-Nwr">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P5e-bY-3fT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BdC-mL-oeI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3r6-NS-WWY"/>
+                            <constraint firstItem="BdC-mL-oeI" firstAttribute="centerX" secondItem="P5e-bY-3fT" secondAttribute="centerX" id="VWs-tN-ZSM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Push" id="X1z-rT-4g3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+        </scene>
+        <!--Pop-->
+        <scene sceneID="LB8-rX-MsR">
+            <objects>
+                <viewController storyboardIdentifier="PopController" id="QZn-Bx-8y8" customClass="PopController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yve-2A-NLL">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg" translatesAutoresizingMaskIntoConstraints="NO" id="2Ey-Xc-F3V">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ire-oC-j4e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Ey-Xc-F3V" firstAttribute="leading" secondItem="Ire-oC-j4e" secondAttribute="leading" id="6mR-3w-wFa"/>
+                            <constraint firstItem="2Ey-Xc-F3V" firstAttribute="trailing" secondItem="Ire-oC-j4e" secondAttribute="trailing" id="Hjd-j2-HGq"/>
+                            <constraint firstAttribute="bottom" secondItem="2Ey-Xc-F3V" secondAttribute="bottom" id="NgN-Pw-XAY"/>
+                            <constraint firstItem="2Ey-Xc-F3V" firstAttribute="top" secondItem="Ire-oC-j4e" secondAttribute="top" id="oQJ-CL-G7f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pop" id="vgM-6F-iYC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zI1-45-eG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="93"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ONN-xS-9L3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o1W-u7-8wJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="UAe-Xk-GuG">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Eg-Qh-lUT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9m-5a-LbV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="timg" width="160" height="266.66665649414062"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
