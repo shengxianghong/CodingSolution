@@ -3,7 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,19 +15,21 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-hH-IhU">
+                    <rect key="frame" x="0.0" y="0.0" width="307" height="45"/>
+                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Button" image="kjsj_down"/>
+                    <state key="selected" image="kjsj_top"/>
+                    <connections>
+                        <action selector="arrowButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="XK9-pF-NwV"/>
+                    </connections>
+                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5R-JV-noM">
-                    <rect key="frame" x="42" y="0.0" width="265" height="45"/>
+                    <rect key="frame" x="43" y="0.0" width="264" height="45"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kjsj_down" highlightedImage="kjsj_top" translatesAutoresizingMaskIntoConstraints="NO" id="8Iz-pS-vcB">
-                    <rect key="frame" x="16" y="18" width="16" height="9.5"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="16" id="3Mc-PY-DVI"/>
-                        <constraint firstAttribute="height" constant="9.5" id="lN1-Eh-vLE"/>
-                    </constraints>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGx-Fe-uHB">
                     <rect key="frame" x="315" y="0.0" width="60" height="45"/>
                     <constraints>
@@ -35,22 +37,32 @@
                     </constraints>
                     <state key="normal" image="dizhi_no"/>
                     <state key="selected" image="dizhi_yes"/>
+                    <connections>
+                        <action selector="choosePersonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="DYk-sV-voy"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="pGx-Fe-uHB" secondAttribute="bottom" id="2Ao-Pj-zDy"/>
-                <constraint firstItem="8Iz-pS-vcB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LhY-pT-eZi"/>
+                <constraint firstItem="8S6-hH-IhU" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4gP-qT-Mp5"/>
+                <constraint firstItem="8S6-hH-IhU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="924-5e-B7T"/>
+                <constraint firstItem="pGx-Fe-uHB" firstAttribute="leading" secondItem="8S6-hH-IhU" secondAttribute="trailing" constant="8" symbolic="YES" id="Iko-DF-Awh"/>
                 <constraint firstItem="pGx-Fe-uHB" firstAttribute="leading" secondItem="b5R-JV-noM" secondAttribute="trailing" constant="8" id="Ms9-oc-y5D"/>
-                <constraint firstItem="8Iz-pS-vcB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="PP7-b2-E94"/>
+                <constraint firstItem="b5R-JV-noM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="43" id="NBO-FJ-ydT"/>
                 <constraint firstItem="b5R-JV-noM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="QFL-AZ-mwb"/>
-                <constraint firstItem="b5R-JV-noM" firstAttribute="leading" secondItem="8Iz-pS-vcB" secondAttribute="trailing" constant="10" id="bhi-x1-8dl"/>
+                <constraint firstItem="8S6-hH-IhU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YRL-Wp-clR"/>
                 <constraint firstItem="pGx-Fe-uHB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="jTE-kK-4Qu"/>
                 <constraint firstItem="pGx-Fe-uHB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rjg-4c-eAS"/>
                 <constraint firstItem="b5R-JV-noM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="wdI-6O-9eZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowButton" destination="8S6-hH-IhU" id="DfG-LC-Rjo"/>
+                <outlet property="chooseButton" destination="pGx-Fe-uHB" id="Buj-gH-owv"/>
+                <outlet property="titleLabel" destination="b5R-JV-noM" id="W4g-Yi-STl"/>
+            </connections>
             <point key="canvasLocation" x="20" y="108.39580209895054"/>
         </view>
     </objects>

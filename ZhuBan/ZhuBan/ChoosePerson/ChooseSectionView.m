@@ -17,4 +17,18 @@
     return self;
 }
 
+- (IBAction)arrowButtonAction:(UIButton *)sender {
+    sender.selected = !sender.isSelected;
+    if (self.arrowSentionBlock) {
+        self.arrowSentionBlock(sender.isSelected);
+    }
+}
+
+- (IBAction)choosePersonAction:(UIButton *)sender {
+    sender.selected = !sender.isSelected;
+    if (self.chooseGroupBlock) {
+        self.chooseGroupBlock(sender.isSelected);
+    }
+}
+
 @end
