@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ThoughPhoto/ThoughPhoto.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ClearNavigation/ClearNavigation.xcodeproj">
    </FileRef>
    <FileRef
