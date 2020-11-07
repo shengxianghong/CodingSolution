@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0C74EF6254BE68B00842F59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C74EF5254BE68B00842F59 /* AppDelegate.m */; };
+		C0C74EFC254BE68B00842F59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C74EFB254BE68B00842F59 /* ViewController.m */; };
+		C0C74EFF254BE68B00842F59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C74EFD254BE68B00842F59 /* Main.storyboard */; };
+		C0C74F01254BE68D00842F59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C74F00254BE68D00842F59 /* Assets.xcassets */; };
+		C0C74F04254BE68D00842F59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C74F02254BE68D00842F59 /* LaunchScreen.storyboard */; };
+		C0C74F07254BE68D00842F59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C74F06254BE68D00842F59 /* main.m */; };
+		C0C74F11254BE68E00842F59 /* ThoughPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C74F10254BE68E00842F59 /* ThoughPhotoTests.m */; };
+		C0C74F1C254BE68E00842F59 /* ThoughPhotoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C74F1B254BE68E00842F59 /* ThoughPhotoUITests.m */; };
+		C0C74F31254BE8D000842F59 /* PhotoThoughVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C74F30254BE8D000842F59 /* PhotoThoughVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0C74F0D254BE68E00842F59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C74EE9254BE68B00842F59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0C74EF0254BE68B00842F59;
+			remoteInfo = ThoughPhoto;
+		};
+		C0C74F18254BE68E00842F59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C74EE9254BE68B00842F59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0C74EF0254BE68B00842F59;
+			remoteInfo = ThoughPhoto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0C74EF1254BE68B00842F59 /* ThoughPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThoughPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C74EF4254BE68B00842F59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0C74EF5254BE68B00842F59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C0C74EFA254BE68B00842F59 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C0C74EFB254BE68B00842F59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C0C74EFE254BE68B00842F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0C74F00254BE68D00842F59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0C74F03254BE68D00842F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0C74F05254BE68D00842F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C74F06254BE68D00842F59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0C74F0C254BE68E00842F59 /* ThoughPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThoughPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C74F10254BE68E00842F59 /* ThoughPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThoughPhotoTests.m; sourceTree = "<group>"; };
+		C0C74F12254BE68E00842F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C74F17254BE68E00842F59 /* ThoughPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThoughPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C74F1B254BE68E00842F59 /* ThoughPhotoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThoughPhotoUITests.m; sourceTree = "<group>"; };
+		C0C74F1D254BE68E00842F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C74F2F254BE8D000842F59 /* PhotoThoughVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoThoughVC.h; sourceTree = "<group>"; };
+		C0C74F30254BE8D000842F59 /* PhotoThoughVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoThoughVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0C74EEE254BE68B00842F59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C74F09254BE68E00842F59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C74F14254BE68E00842F59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0C74EE8254BE68B00842F59 = {
+			isa = PBXGroup;
+			children = (
+				C0C74EF3254BE68B00842F59 /* ThoughPhoto */,
+				C0C74F0F254BE68E00842F59 /* ThoughPhotoTests */,
+				C0C74F1A254BE68E00842F59 /* ThoughPhotoUITests */,
+				C0C74EF2254BE68B00842F59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0C74EF2254BE68B00842F59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0C74EF1254BE68B00842F59 /* ThoughPhoto.app */,
+				C0C74F0C254BE68E00842F59 /* ThoughPhotoTests.xctest */,
+				C0C74F17254BE68E00842F59 /* ThoughPhotoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0C74EF3254BE68B00842F59 /* ThoughPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				C0C74EF4254BE68B00842F59 /* AppDelegate.h */,
+				C0C74EF5254BE68B00842F59 /* AppDelegate.m */,
+				C0C74EFA254BE68B00842F59 /* ViewController.h */,
+				C0C74EFB254BE68B00842F59 /* ViewController.m */,
+				C0C74F2F254BE8D000842F59 /* PhotoThoughVC.h */,
+				C0C74F30254BE8D000842F59 /* PhotoThoughVC.m */,
+				C0C74EFD254BE68B00842F59 /* Main.storyboard */,
+				C0C74F00254BE68D00842F59 /* Assets.xcassets */,
+				C0C74F02254BE68D00842F59 /* LaunchScreen.storyboard */,
+				C0C74F05254BE68D00842F59 /* Info.plist */,
+				C0C74F06254BE68D00842F59 /* main.m */,
+			);
+			path = ThoughPhoto;
+			sourceTree = "<group>";
+		};
+		C0C74F0F254BE68E00842F59 /* ThoughPhotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0C74F10254BE68E00842F59 /* ThoughPhotoTests.m */,
+				C0C74F12254BE68E00842F59 /* Info.plist */,
+			);
+			path = ThoughPhotoTests;
+			sourceTree = "<group>";
+		};
+		C0C74F1A254BE68E00842F59 /* ThoughPhotoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0C74F1B254BE68E00842F59 /* ThoughPhotoUITests.m */,
+				C0C74F1D254BE68E00842F59 /* Info.plist */,
+			);
+			path = ThoughPhotoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0C74EF0254BE68B00842F59 /* ThoughPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0C74F20254BE68E00842F59 /* Build configuration list for PBXNativeTarget "ThoughPhoto" */;
+			buildPhases = (
+				C0C74EED254BE68B00842F59 /* Sources */,
+				C0C74EEE254BE68B00842F59 /* Frameworks */,
+				C0C74EEF254BE68B00842F59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThoughPhoto;
+			productName = ThoughPhoto;
+			productReference = C0C74EF1254BE68B00842F59 /* ThoughPhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0C74F0B254BE68E00842F59 /* ThoughPhotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0C74F23254BE68E00842F59 /* Build configuration list for PBXNativeTarget "ThoughPhotoTests" */;
+			buildPhases = (
+				C0C74F08254BE68E00842F59 /* Sources */,
+				C0C74F09254BE68E00842F59 /* Frameworks */,
+				C0C74F0A254BE68E00842F59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0C74F0E254BE68E00842F59 /* PBXTargetDependency */,
+			);
+			name = ThoughPhotoTests;
+			productName = ThoughPhotoTests;
+			productReference = C0C74F0C254BE68E00842F59 /* ThoughPhotoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0C74F16254BE68E00842F59 /* ThoughPhotoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0C74F26254BE68E00842F59 /* Build configuration list for PBXNativeTarget "ThoughPhotoUITests" */;
+			buildPhases = (
+				C0C74F13254BE68E00842F59 /* Sources */,
+				C0C74F14254BE68E00842F59 /* Frameworks */,
+				C0C74F15254BE68E00842F59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0C74F19254BE68E00842F59 /* PBXTargetDependency */,
+			);
+			name = ThoughPhotoUITests;
+			productName = ThoughPhotoUITests;
+			productReference = C0C74F17254BE68E00842F59 /* ThoughPhotoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0C74EE9254BE68B00842F59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					C0C74EF0254BE68B00842F59 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					C0C74F0B254BE68E00842F59 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = C0C74EF0254BE68B00842F59;
+					};
+					C0C74F16254BE68E00842F59 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = C0C74EF0254BE68B00842F59;
+					};
+				};
+			};
+			buildConfigurationList = C0C74EEC254BE68B00842F59 /* Build configuration list for PBXProject "ThoughPhoto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0C74EE8254BE68B00842F59;
+			productRefGroup = C0C74EF2254BE68B00842F59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0C74EF0254BE68B00842F59 /* ThoughPhoto */,
+				C0C74F0B254BE68E00842F59 /* ThoughPhotoTests */,
+				C0C74F16254BE68E00842F59 /* ThoughPhotoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0C74EEF254BE68B00842F59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C74F04254BE68D00842F59 /* LaunchScreen.storyboard in Resources */,
+				C0C74F01254BE68D00842F59 /* Assets.xcassets in Resources */,
+				C0C74EFF254BE68B00842F59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C74F0A254BE68E00842F59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C74F15254BE68E00842F59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0C74EED254BE68B00842F59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C74F31254BE8D000842F59 /* PhotoThoughVC.m in Sources */,
+				C0C74EFC254BE68B00842F59 /* ViewController.m in Sources */,
+				C0C74EF6254BE68B00842F59 /* AppDelegate.m in Sources */,
+				C0C74F07254BE68D00842F59 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C74F08254BE68E00842F59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C74F11254BE68E00842F59 /* ThoughPhotoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C74F13254BE68E00842F59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C74F1C254BE68E00842F59 /* ThoughPhotoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0C74F0E254BE68E00842F59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0C74EF0254BE68B00842F59 /* ThoughPhoto */;
+			targetProxy = C0C74F0D254BE68E00842F59 /* PBXContainerItemProxy */;
+		};
+		C0C74F19254BE68E00842F59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0C74EF0254BE68B00842F59 /* ThoughPhoto */;
+			targetProxy = C0C74F18254BE68E00842F59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0C74EFD254BE68B00842F59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0C74EFE254BE68B00842F59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0C74F02254BE68D00842F59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0C74F03254BE68D00842F59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0C74F1E254BE68E00842F59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C0C74F1F254BE68E00842F59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0C74F21254BE68E00842F59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThoughPhoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sxh.ThoughPhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0C74F22254BE68E00842F59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThoughPhoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sxh.ThoughPhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0C74F24254BE68E00842F59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThoughPhotoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sxh.ThoughPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThoughPhoto.app/ThoughPhoto";
+			};
+			name = Debug;
+		};
+		C0C74F25254BE68E00842F59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThoughPhotoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sxh.ThoughPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThoughPhoto.app/ThoughPhoto";
+			};
+			name = Release;
+		};
+		C0C74F27254BE68E00842F59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThoughPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sxh.ThoughPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThoughPhoto;
+			};
+			name = Debug;
+		};
+		C0C74F28254BE68E00842F59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThoughPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sxh.ThoughPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThoughPhoto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0C74EEC254BE68B00842F59 /* Build configuration list for PBXProject "ThoughPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C74F1E254BE68E00842F59 /* Debug */,
+				C0C74F1F254BE68E00842F59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C74F20254BE68E00842F59 /* Build configuration list for PBXNativeTarget "ThoughPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C74F21254BE68E00842F59 /* Debug */,
+				C0C74F22254BE68E00842F59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C74F23254BE68E00842F59 /* Build configuration list for PBXNativeTarget "ThoughPhotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C74F24254BE68E00842F59 /* Debug */,
+				C0C74F25254BE68E00842F59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0C74F26254BE68E00842F59 /* Build configuration list for PBXNativeTarget "ThoughPhotoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C74F27254BE68E00842F59 /* Debug */,
+				C0C74F28254BE68E00842F59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0C74EE9254BE68B00842F59 /* Project object */;
+}
