@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIMenuVC/UIMenuVC.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:StringColor/StringColor.xcodeproj">
    </FileRef>
    <FileRef
