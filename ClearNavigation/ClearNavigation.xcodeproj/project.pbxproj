@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0282E9D25620148002D5553 /* ClearNavigation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClearNavigation.entitlements; sourceTree = "<group>"; };
 		C0981EB025414F7E00EF7C3A /* ClearNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0981EB325414F7E00EF7C3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0981EB425414F7E00EF7C3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 		C0981EB225414F7E00EF7C3A /* ClearNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				C0282E9D25620148002D5553 /* ClearNavigation.entitlements */,
 				C0981EB325414F7E00EF7C3A /* AppDelegate.h */,
 				C0981EB425414F7E00EF7C3A /* AppDelegate.m */,
 				C0981EB925414F7E00EF7C3A /* ViewController.h */,
@@ -441,7 +443,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClearNavigation/ClearNavigation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QKJ3MKF796;
 				INFOPLIST_FILE = ClearNavigation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,6 +453,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sxh.ClearNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -458,7 +463,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClearNavigation/ClearNavigation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QKJ3MKF796;
 				INFOPLIST_FILE = ClearNavigation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +473,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sxh.ClearNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
