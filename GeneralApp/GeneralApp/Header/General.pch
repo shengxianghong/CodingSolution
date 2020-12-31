@@ -1,0 +1,27 @@
+//
+//  General.pch
+//  GeneralApp
+//
+//  Created by zkworld on 2020/12/31.
+//
+
+#ifndef General_pch
+#define General_pch
+
+#import "AppHeader.h"
+
+//Pods
+#import <AFNetworking/AFNetworking.h>
+#import <UIScrollView+EmptyDataSet.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <Masonry/Masonry.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <PYSearch/PYSearch.h>
+#import <SDWebImage/SDWebImage.h>
+
+#import "XHFileData.h"
+#import "ApiManager.h"
+
+#endif /* General_pch */
