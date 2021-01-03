@@ -5,11 +5,11 @@
 //  Created by zkworld on 2020/12/31.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomePageVC : UIViewController
+@interface HomePageVC : BaseController
 
 @end
 

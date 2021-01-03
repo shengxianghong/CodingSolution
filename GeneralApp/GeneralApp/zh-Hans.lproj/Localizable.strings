@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  GeneralApp
+
+  Created by s&z on 2021/1/3.
+  
+*/
+
+"NoNetworkText" = "当前网络不可用，请检查网络设置";
+"RequestTimeOutText" = "网络请求超时";
+"ServerBusyText" = "服务器繁忙，请稍后操作";

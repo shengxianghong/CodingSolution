@@ -23,5 +23,6 @@
 
 #import "XHFileData.h"
 #import "ApiManager.h"
+#import "XHTextConst.h"
 
 #endif /* General_pch */

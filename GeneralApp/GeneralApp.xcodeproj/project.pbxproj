@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1355CA0725A04BD2008664D5 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355CA0625A04BD2008664D5 /* BaseController.m */; };
+		1355CA1125A04D0D008664D5 /* XHErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355CA1025A04D0D008664D5 /* XHErrorView.m */; };
+		1355CA1925A04D1F008664D5 /* XHErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1355CA1825A04D1F008664D5 /* XHErrorView.xib */; };
+		1355CA2625A18FAB008664D5 /* XHColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355CA2425A18FAB008664D5 /* XHColor.m */; };
+		1355CA2725A18FAB008664D5 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355CA2525A18FAB008664D5 /* UIColor+Category.m */; };
+		1355CA2E25A1902B008664D5 /* XHTextConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355CA2D25A1902B008664D5 /* XHTextConst.m */; };
+		1355CA4325A19E15008664D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1355CA4525A19E15008664D5 /* Localizable.strings */; };
+		13864FAB25A1D72E008FF26F /* UIImage+ToastGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 13864FAA25A1D72E008FF26F /* UIImage+ToastGIF.m */; };
+		13864FBB25A1D82F008FF26F /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 13864FBA25A1D82F008FF26F /* loading.gif */; };
+		13F3FB6725A1ED7C00A0D5EE /* XHTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F3FB6625A1ED7C00A0D5EE /* XHTableView.m */; };
 		3A515D2CE78A449586297AAF /* Pods_GeneralApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF7AF3F5A40A3403E78FA08 /* Pods_GeneralApp.framework */; };
 		C00A672A259D6803006BBE55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C00A6729259D6803006BBE55 /* AppDelegate.m */; };
 		C00A6733259D6803006BBE55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00A6731259D6803006BBE55 /* Main.storyboard */; };
@@ -41,6 +51,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1355CA0525A04BD2008664D5 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		1355CA0625A04BD2008664D5 /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		1355CA0F25A04D0D008664D5 /* XHErrorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHErrorView.h; sourceTree = "<group>"; };
+		1355CA1025A04D0D008664D5 /* XHErrorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHErrorView.m; sourceTree = "<group>"; };
+		1355CA1825A04D1F008664D5 /* XHErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XHErrorView.xib; sourceTree = "<group>"; };
+		1355CA2225A18FAB008664D5 /* XHColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHColor.h; sourceTree = "<group>"; };
+		1355CA2325A18FAB008664D5 /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
+		1355CA2425A18FAB008664D5 /* XHColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHColor.m; sourceTree = "<group>"; };
+		1355CA2525A18FAB008664D5 /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
+		1355CA2C25A1902B008664D5 /* XHTextConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHTextConst.h; sourceTree = "<group>"; };
+		1355CA2D25A1902B008664D5 /* XHTextConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHTextConst.m; sourceTree = "<group>"; };
+		1355CA3225A19084008664D5 /* XHKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHKit.h; sourceTree = "<group>"; };
+		1355CA3625A19CC6008664D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		1355CA3A25A19CC6008664D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		1355CA4425A19E15008664D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1355CA4625A19E1C008664D5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		13864FA925A1D72E008FF26F /* UIImage+ToastGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ToastGIF.h"; sourceTree = "<group>"; };
+		13864FAA25A1D72E008FF26F /* UIImage+ToastGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ToastGIF.m"; sourceTree = "<group>"; };
+		13864FBA25A1D82F008FF26F /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		13F3FB6525A1ED7C00A0D5EE /* XHTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHTableView.h; sourceTree = "<group>"; };
+		13F3FB6625A1ED7C00A0D5EE /* XHTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHTableView.m; sourceTree = "<group>"; };
 		1B017AA940B50DF571D45516 /* Pods-GeneralApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeneralApp.debug.xcconfig"; path = "Target Support Files/Pods-GeneralApp/Pods-GeneralApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6DF7AF3F5A40A3403E78FA08 /* Pods_GeneralApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeneralApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D276F1BDC4B7949A07AD36 /* Pods-GeneralApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeneralApp.release.xcconfig"; path = "Target Support Files/Pods-GeneralApp/Pods-GeneralApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +132,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1355CA0425A04BA8008664D5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1355CA0525A04BD2008664D5 /* BaseController.h */,
+				1355CA0625A04BD2008664D5 /* BaseController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1355CA0E25A04C8B008664D5 /* XHErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				1355CA0F25A04D0D008664D5 /* XHErrorView.h */,
+				1355CA1025A04D0D008664D5 /* XHErrorView.m */,
+				1355CA1825A04D1F008664D5 /* XHErrorView.xib */,
+			);
+			path = XHErrorView;
+			sourceTree = "<group>";
+		};
+		1355CA2025A18F37008664D5 /* XHKit */ = {
+			isa = PBXGroup;
+			children = (
+				1355CA3225A19084008664D5 /* XHKit.h */,
+				1355CA2B25A19013008664D5 /* XHTextConst */,
+				1355CA2125A18F48008664D5 /* XHColor */,
+				1355CA0E25A04C8B008664D5 /* XHErrorView */,
+				13F3FB6425A1EBFE00A0D5EE /* XHTableView */,
+			);
+			path = XHKit;
+			sourceTree = "<group>";
+		};
+		1355CA2125A18F48008664D5 /* XHColor */ = {
+			isa = PBXGroup;
+			children = (
+				1355CA2325A18FAB008664D5 /* UIColor+Category.h */,
+				1355CA2525A18FAB008664D5 /* UIColor+Category.m */,
+				1355CA2225A18FAB008664D5 /* XHColor.h */,
+				1355CA2425A18FAB008664D5 /* XHColor.m */,
+			);
+			path = XHColor;
+			sourceTree = "<group>";
+		};
+		1355CA2B25A19013008664D5 /* XHTextConst */ = {
+			isa = PBXGroup;
+			children = (
+				1355CA2C25A1902B008664D5 /* XHTextConst.h */,
+				1355CA2D25A1902B008664D5 /* XHTextConst.m */,
+			);
+			path = XHTextConst;
+			sourceTree = "<group>";
+		};
+		13864FA025A1D690008FF26F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				13864FBA25A1D82F008FF26F /* loading.gif */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		13F3FB6425A1EBFE00A0D5EE /* XHTableView */ = {
+			isa = PBXGroup;
+			children = (
+				13F3FB6525A1ED7C00A0D5EE /* XHTableView.h */,
+				13F3FB6625A1ED7C00A0D5EE /* XHTableView.m */,
+			);
+			path = XHTableView;
+			sourceTree = "<group>";
+		};
 		7D99040864C2BEB9FADF328B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +242,7 @@
 		C00A6727259D6803006BBE55 /* GeneralApp */ = {
 			isa = PBXGroup;
 			children = (
+				13864FA025A1D690008FF26F /* Resource */,
 				C00A67B0259DC787006BBE55 /* Main */,
 				C00A6787259D79CD006BBE55 /* ServerApi */,
 				C00A6786259D7921006BBE55 /* Utils */,
@@ -154,6 +254,7 @@
 				C00A6736259D6804006BBE55 /* LaunchScreen.storyboard */,
 				C00A6739259D6804006BBE55 /* Info.plist */,
 				C00A673A259D6804006BBE55 /* main.m */,
+				1355CA4525A19E15008664D5 /* Localizable.strings */,
 			);
 			path = GeneralApp;
 			sourceTree = "<group>";
@@ -188,6 +289,8 @@
 		C00A6786259D7921006BBE55 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1355CA0425A04BA8008664D5 /* Base */,
+				1355CA2025A18F37008664D5 /* XHKit */,
 				C00A67BC259DD622006BBE55 /* ProgressHUD */,
 			);
 			path = Utils;
@@ -237,6 +340,8 @@
 		C00A67BC259DD622006BBE55 /* ProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				13864FA925A1D72E008FF26F /* UIImage+ToastGIF.h */,
+				13864FAA25A1D72E008FF26F /* UIImage+ToastGIF.m */,
 				C00A67BD259DD622006BBE55 /* ProgressHUD.h */,
 				C00A67BE259DD622006BBE55 /* ProgressHUD.m */,
 			);
@@ -329,6 +434,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = C00A671C259D6803006BBE55;
 			productRefGroup = C00A6726259D6803006BBE55 /* Products */;
@@ -347,7 +453,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1355CA4325A19E15008664D5 /* Localizable.strings in Resources */,
 				C00A6738259D6804006BBE55 /* LaunchScreen.storyboard in Resources */,
+				1355CA1925A04D1F008664D5 /* XHErrorView.xib in Resources */,
+				13864FBB25A1D82F008FF26F /* loading.gif in Resources */,
 				C00A6735259D6804006BBE55 /* Assets.xcassets in Resources */,
 				C00A6733259D6803006BBE55 /* Main.storyboard in Resources */,
 			);
@@ -417,13 +526,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C00A672A259D6803006BBE55 /* AppDelegate.m in Sources */,
+				1355CA2625A18FAB008664D5 /* XHColor.m in Sources */,
+				1355CA0725A04BD2008664D5 /* BaseController.m in Sources */,
 				C00A678D259D7C08006BBE55 /* XHNetWork.m in Sources */,
 				C00A679F259DB3C0006BBE55 /* ApiManager.m in Sources */,
 				C00A6793259D7C3A006BBE55 /* XHCacheTool.m in Sources */,
+				1355CA2E25A1902B008664D5 /* XHTextConst.m in Sources */,
+				1355CA1125A04D0D008664D5 /* XHErrorView.m in Sources */,
 				C00A67B3259DC7A5006BBE55 /* HomePageVC.m in Sources */,
 				C00A673B259D6804006BBE55 /* main.m in Sources */,
 				C00A67BF259DD622006BBE55 /* ProgressHUD.m in Sources */,
 				C00A6799259DAD8D006BBE55 /* XHFileData.m in Sources */,
+				13F3FB6725A1ED7C00A0D5EE /* XHTableView.m in Sources */,
+				13864FAB25A1D72E008FF26F /* UIImage+ToastGIF.m in Sources */,
+				1355CA2725A18FAB008664D5 /* UIColor+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,10 +575,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1355CA4525A19E15008664D5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1355CA4425A19E15008664D5 /* en */,
+				1355CA4625A19E1C008664D5 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		C00A6731259D6803006BBE55 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C00A6732259D6803006BBE55 /* Base */,
+				1355CA3625A19CC6008664D5 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -471,6 +597,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C00A6737259D6804006BBE55 /* Base */,
+				1355CA3A25A19CC6008664D5 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -482,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -541,6 +669,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -597,6 +726,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QKJ3MKF796;
 				GCC_PREFIX_HEADER = $SRCROOT/GeneralApp/Header/General.pch;
 				INFOPLIST_FILE = GeneralApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -617,6 +747,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QKJ3MKF796;
 				GCC_PREFIX_HEADER = $SRCROOT/GeneralApp/Header/General.pch;
 				INFOPLIST_FILE = GeneralApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

@@ -8,7 +8,7 @@
 #import "HomePageVC.h"
 
 @interface HomePageVC ()
-@property (weak, nonatomic) IBOutlet UILabel *msgLabel;
+
 @end
 
 @implementation HomePageVC
@@ -16,13 +16,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    [[ApiManager shardInstance] requestWithRequsetType:0 url:@"" param:nil view:nil hudType:0 resultBlock:^(NSDictionary * _Nonnull data, NSError * _Nullable error) {
-//        if (error) {
-//            self.msgLabel.text = data[@"message"];
-//            return;
-//        }
-//        self.msgLabel.text = @"success";
-//    }];
+}
+
+- (void)loadDisplayData {
+    [super loadDisplayData];
+    [[ApiManager shardInstance] requestWithRequsetType:0 url:@"" param:nil viewController:self hudType:1 resultBlock:^(NSDictionary * _Nonnull data, NSError * _Nullable error) {
+        if (error) return;
+    }];
 }
 
 /*
