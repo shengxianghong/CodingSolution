@@ -18,9 +18,14 @@ NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RefreshTableView : XHTableView
-@property (nonatomic, strong) NSMutableArray *listMuArray;
 @property (nonatomic, assign) int correctPage;
-@property (nonatomic, getter=isLoading) BOOL loading;
+@property (nonatomic, getter=isShowHud) BOOL showHud;
+@property (nonatomic, strong) NSMutableArray *listMuArray;
+
+@property (nonatomic, copy) void (^refreshPageBlock) (void);
+
+- (void)endRefersh;
+- (void)creatListDataArray:(NSMutableArray *)muArray;
 @end
 
 NS_ASSUME_NONNULL_END

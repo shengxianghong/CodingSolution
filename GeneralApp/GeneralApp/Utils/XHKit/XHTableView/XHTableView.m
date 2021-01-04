@@ -7,6 +7,7 @@
 
 #import "XHTableView.h"
 #import "XHColor.h"
+
 @implementation XHTableView
 
 - (void)awakeFromNib {
@@ -17,20 +18,57 @@
 @end
 
 @interface RefreshTableView ()<DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
-
+@property (nonatomic, getter=isLoading) BOOL loading;
 @end
 @implementation RefreshTableView
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.showHud = YES;
     
-//    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
-//     [refreshControl addTarget:self action:@selector(loadNewHeaderData) forControlEvents:UIControlEventValueChanged];
-//     self.refreshControl = refreshControl;
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+     [refreshControl addTarget:self action:@selector(loadHeaderData) forControlEvents:UIControlEventValueChanged];
+     self.refreshControl = refreshControl;
+    
+    self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        self.showHud = NO;
+        if (self.refreshPageBlock) {
+            self.refreshPageBlock();
+        }
+    }];
+    self.mj_footer.hidden = YES;
      
      self.emptyDataSetSource = self;
      self.emptyDataSetDelegate = self;
      self.tableFooterView = [UIView new];
+}
+
+- (void)loadHeaderData {
+    self.showHud = NO;
+    self.correctPage = 1;
+    if (self.refreshPageBlock) {
+        self.refreshPageBlock();
+    }
+}
+
+- (void)endRefersh {
+    self.loading = NO;
+    [self.refreshControl endRefreshing];
+    [self.mj_footer endRefreshing];
+}
+
+- (void)creatListDataArray:(NSMutableArray *)muArray {
+    if (self.correctPage == 1) {
+        self.listMuArray = muArray;
+        self.mj_footer.hidden = muArray.count == 0;
+    }else {
+        self.mj_footer.hidden = NO;
+        [self.listMuArray addObjectsFromArray:muArray];
+        if (muArray.count < 10) {
+            [self.mj_footer endRefreshingWithNoMoreData];
+        }
+    }
+    self.correctPage ++;
 }
 
 - (void)setLoading:(BOOL)loading
@@ -76,6 +114,7 @@
 
 - (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view {
     self.loading = YES;
+    [self loadHeaderData];
 }
 
 - (BOOL)emptyDataSetShouldAllowScroll:(UIScrollView *)scrollView {

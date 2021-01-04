@@ -56,18 +56,23 @@ static ApiManager *apiManager;
 }
 
 - (void)successSettings:(NSDictionary *)data viewController:(nullable BaseController *)vc resultBlock:(DataResultBlock)block {
-    if (!data) return;
-    if ([[data objectForKey:@"code"] integerValue] == 200) {
+    if (!data) return;//has_next
+//    if ([[data objectForKey:@"code"] integerValue] == 200) {
+    if ([data[@"meta"][@"has_next"] boolValue] == YES) {
         vc.errorView.hidden = YES;
         if (block) block(data, nil);
     }else {
         NSString *message = [NSString stringWithFormat:@"%@",[data objectForKey:@"message"]];
-        vc.errorView.hidden = NO;
-        vc.errorView.errorLabel.text = message;
-        __weak __typeof(&*vc) weakVc = vc;
-        vc.errorView.reloadDataBlock = ^{
-            [weakVc loadDisplayData];
-        };
+        if (vc) {
+            vc.errorView.hidden = NO;
+            vc.errorView.errorLabel.text = message;
+            __weak __typeof(&*vc) weakVc = vc;
+            vc.errorView.reloadDataBlock = ^{
+                [weakVc loadDisplayData];
+            };
+        }else {
+            [ProgressHUD showStatusProgress:vc.view text:message status:1];
+        }
         NSError *error = [NSError errorWithDomain:CustomErrorDomain code:-1000 userInfo:nil];
         if (block) block(data, error);
     }

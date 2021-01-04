@@ -31,6 +31,7 @@
 		C00A679F259DB3C0006BBE55 /* ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C00A679E259DB3C0006BBE55 /* ApiManager.m */; };
 		C00A67B3259DC7A5006BBE55 /* HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C00A67B2259DC7A5006BBE55 /* HomePageVC.m */; };
 		C00A67BF259DD622006BBE55 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C00A67BE259DD622006BBE55 /* ProgressHUD.m */; };
+		C09C1D0B25A2F8AC001DBF75 /* GoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C09C1D0A25A2F8AC001DBF75 /* GoodsModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		C00A67B2259DC7A5006BBE55 /* HomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageVC.m; sourceTree = "<group>"; };
 		C00A67BD259DD622006BBE55 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		C00A67BE259DD622006BBE55 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		C09C1D0925A2F8AC001DBF75 /* GoodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsModel.h; sourceTree = "<group>"; };
+		C09C1D0A25A2F8AC001DBF75 /* GoodsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +336,8 @@
 			children = (
 				C00A67B1259DC7A5006BBE55 /* HomePageVC.h */,
 				C00A67B2259DC7A5006BBE55 /* HomePageVC.m */,
+				C09C1D0925A2F8AC001DBF75 /* GoodsModel.h */,
+				C09C1D0A25A2F8AC001DBF75 /* GoodsModel.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -529,6 +534,7 @@
 				1355CA2625A18FAB008664D5 /* XHColor.m in Sources */,
 				1355CA0725A04BD2008664D5 /* BaseController.m in Sources */,
 				C00A678D259D7C08006BBE55 /* XHNetWork.m in Sources */,
+				C09C1D0B25A2F8AC001DBF75 /* GoodsModel.m in Sources */,
 				C00A679F259DB3C0006BBE55 /* ApiManager.m in Sources */,
 				C00A6793259D7C3A006BBE55 /* XHCacheTool.m in Sources */,
 				1355CA2E25A1902B008664D5 /* XHTextConst.m in Sources */,

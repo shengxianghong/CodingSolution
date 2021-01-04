@@ -11,7 +11,7 @@
 //release
 //#define API_URL_BASE @""
 //debug
-#define API_URL_BASE @"http://venue.goodtogo.live/mobile/gtgZone/list"
+#define API_URL_BASE @"https://m.api.zhe800.com/"
 
 // Screen
 #define kScreen_Bounds  [[UIScreen mainScreen] bounds]
