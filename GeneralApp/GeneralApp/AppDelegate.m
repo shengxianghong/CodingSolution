@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TABAnimated.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[TABAnimated sharedAnimated] initWithOnlySkeleton];
+    [TABAnimated sharedAnimated].openLog = YES;
     return YES;
 }
 

@@ -8,6 +8,8 @@
 #import "HomePageVC.h"
 #import "XHTableView.h"
 #import "GoodsModel.h"
+#import "TABAnimated.h"
+#import "TableViewCell.h"
 
 @interface HomePageVC ()
 @property (weak, nonatomic) IBOutlet RefreshTableView *tableView;
@@ -21,7 +23,16 @@ static NSString * const reuseIdentifier = @"Cell";
     // Do any additional setup after loading the view.
     
     self.tableView.rowHeight = 50.0f;
-    [self loadDisplayData];
+//    self.tableView.tabAnimated = [TABTableAnimated animatedWithCellClass:[TableViewCell class] cellHeight:50.0f];
+//    self.tableView.tabAnimated.adjustBlock = ^(TABComponentManager * _Nonnull manager) {
+//        //manager.animation(1).width(100);
+//    };
+//
+//    [self.tableView tab_startAnimationWithCompletion:^{
+//
+//    }];
+
+//    [self loadDisplayData];
 
     WS(weakSelf)
     self.tableView.refreshPageBlock = ^{
@@ -62,7 +73,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)loadDisplayData {
     [super loadDisplayData];
     NSString *urlString = [NSString stringWithFormat:@"list/search/v2?activity_filt=0&has_coupon=0&q=空&per_page=10&page=%d",self.tableView.correctPage];
-    [[ApiManager shardInstance] requestWithRequsetType:0 url:urlString param:nil viewController:self hudType:self.tableView.isShowHud resultBlock:^(NSDictionary * _Nonnull data, NSError * _Nullable error) {
+    [[ApiManager shardInstance] requestWithRequsetType:0 url:urlString param:nil viewController:self hudType:0 resultBlock:^(NSDictionary * _Nonnull data, NSError * _Nullable error) {
         [self.tableView endRefersh];
         if (error) return;
         [self.tableView creatListDataArray:[GoodsModel mj_objectArrayWithKeyValuesArray:data[@"objects"]]];
