@@ -32,7 +32,7 @@ static NSString * const reuseIdentifier = @"Cell";
 //
 //    }];
 
-//    [self loadDisplayData];
+    [self loadDisplayData];
 
     WS(weakSelf)
     self.tableView.refreshPageBlock = ^{
@@ -73,7 +73,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)loadDisplayData {
     [super loadDisplayData];
     NSString *urlString = [NSString stringWithFormat:@"list/search/v2?activity_filt=0&has_coupon=0&q=空&per_page=10&page=%d",self.tableView.correctPage];
-    [[ApiManager shardInstance] requestWithRequsetType:0 url:urlString param:nil viewController:self hudType:0 resultBlock:^(NSDictionary * _Nonnull data, NSError * _Nullable error) {
+    [[ApiManager shardInstance] requestWithRequsetType:0 url:urlString param:nil viewController:self hudType:self.tableView.isShowHud ? 1 : 0 resultBlock:^(NSDictionary * _Nonnull data, NSError * _Nullable error) {
         [self.tableView endRefersh];
         if (error) return;
         [self.tableView creatListDataArray:[GoodsModel mj_objectArrayWithKeyValuesArray:data[@"objects"]]];
