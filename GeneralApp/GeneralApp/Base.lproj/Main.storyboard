@@ -57,24 +57,29 @@
                                 <color key="backgroundColor" name="white1"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="2Rg-73-ya2" customClass="TableViewCell">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="40.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Rg-73-ya2" id="cfD-om-Tlr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="40.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3L-tk-vmI">
-                                                    <rect key="frame" x="20" y="11.5" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3L-tk-vmI">
+                                                    <rect key="frame" x="20" y="11" width="374" height="18.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="y3L-tk-vmI" firstAttribute="centerY" secondItem="cfD-om-Tlr" secondAttribute="centerY" id="H7b-IZ-YNS"/>
                                                 <constraint firstItem="y3L-tk-vmI" firstAttribute="leading" secondItem="cfD-om-Tlr" secondAttribute="leadingMargin" id="Hf9-tu-lhh"/>
+                                                <constraint firstItem="y3L-tk-vmI" firstAttribute="bottom" secondItem="cfD-om-Tlr" secondAttribute="bottomMargin" id="MMe-3V-xdG"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="y3L-tk-vmI" secondAttribute="trailing" id="rf8-SE-tPT"/>
+                                                <constraint firstItem="y3L-tk-vmI" firstAttribute="top" secondItem="cfD-om-Tlr" secondAttribute="topMargin" id="u3k-ft-9bk"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="y3L-tk-vmI" id="Pud-UE-ZDF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

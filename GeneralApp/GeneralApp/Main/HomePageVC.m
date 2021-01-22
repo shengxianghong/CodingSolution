@@ -8,7 +8,6 @@
 #import "HomePageVC.h"
 #import "XHTableView.h"
 #import "GoodsModel.h"
-#import "TABAnimated.h"
 #import "TableViewCell.h"
 
 @interface HomePageVC ()
@@ -22,18 +21,6 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.tableView.rowHeight = 50.0f;
-//    self.tableView.tabAnimated = [TABTableAnimated animatedWithCellClass:[TableViewCell class] cellHeight:50.0f];
-//    self.tableView.tabAnimated.adjustBlock = ^(TABComponentManager * _Nonnull manager) {
-//        //manager.animation(1).width(100);
-//    };
-//
-//    [self.tableView tab_startAnimationWithCompletion:^{
-//
-//    }];
-
-    [self loadDisplayData];
-
     WS(weakSelf)
     self.tableView.refreshPageBlock = ^{
         [weakSelf loadDisplayData];
@@ -50,9 +37,9 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
     GoodsModel *model = self.tableView.listMuArray[indexPath.row];
-    cell.textLabel.text = model.title;
+    cell.titleLabel.text = model.title;
     return cell;
 }
 
@@ -78,6 +65,8 @@ static NSString * const reuseIdentifier = @"Cell";
         if (error) return;
         [self.tableView creatListDataArray:[GoodsModel mj_objectArrayWithKeyValuesArray:data[@"objects"]]];
         [self.tableView reloadData];
+        
+        NSLog(@"%d",self.tableView.correctPage);
     }];
 }
 
