@@ -58,13 +58,13 @@ static ApiManager *apiManager;
 - (void)successSettings:(NSDictionary *)data viewController:(nullable BaseController *)vc resultBlock:(DataResultBlock)block {
     if (!data) return;//has_next
 //    if ([[data objectForKey:@"code"] integerValue] == 200) {
-    if ([data[@"meta"][@"has_next"] boolValue] == YES) {
-        vc.errorView.hidden = YES;
+    BOOL isHaveData = [data[@"meta"][@"has_next"] boolValue];
+    vc.errorView.hidden = isHaveData;
+    if (isHaveData) {
         if (block) block(data, nil);
     }else {
         NSString *message = [NSString stringWithFormat:@"%@",[data objectForKey:@"message"]];
         if (vc) {
-            vc.errorView.hidden = NO;
             vc.errorView.errorLabel.text = message;
             __weak __typeof(&*vc) weakVc = vc;
             vc.errorView.reloadDataBlock = ^{

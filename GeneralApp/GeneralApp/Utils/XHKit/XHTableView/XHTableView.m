@@ -25,6 +25,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.showHud = YES;
+    self.correctPage = 1;
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
      [refreshControl addTarget:self action:@selector(loadHeaderData) forControlEvents:UIControlEventValueChanged];
