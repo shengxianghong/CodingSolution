@@ -21,19 +21,24 @@ static ApiManager *apiManager;
     return apiManager;
 }
 
-- (void)requestWithRequsetType:(XHRequestType)requsetType url:(NSString *)urlString param:(nullable NSDictionary *)param viewController:(nullable BaseController *)vc hudType:(ShowHudType)hudType resultBlock:(DataResultBlock)block {
+- (void)requestWithType:(XHRequestType)requsetType
+                    url:(NSString *)urlString
+                  param:(nullable NSDictionary *)param
+         viewController:(nullable BaseController *)baseVC
+                hudType:(ShowHudType)hudType
+            resultBlock:(DataResultBlock)block {
     if (hudType == 1) {
-        [ProgressHUD showCustomProgress:vc.view];
+        [ProgressHUD showCustomProgress:baseVC.view];
     }else if (hudType == 2) {
-        [ProgressHUD showSubmitProgress:vc.view text:@""];
+        [ProgressHUD showSubmitProgress:baseVC.view text:@""];
     }
     [XHNetWork requestDataWithMethod:requsetType url:urlString params:param cacheType:1 success:^(id  _Nonnull responseObject) {
-        [ProgressHUD hideProgress:vc.view];
+        [ProgressHUD hideProgress:baseVC.view];
         NSDictionary *data = (NSDictionary *)responseObject;
-        [self successSettings:data viewController:vc resultBlock:block];
+        [self successSettings:data viewController:baseVC resultBlock:block];
     } failure:^(NSError * _Nonnull error) {
-        [ProgressHUD hideProgress:vc.view];
-        [self failMessage:error viewController:vc resultBlock:block];
+        [ProgressHUD hideProgress:baseVC.view];
+        [self failMessage:error viewController:baseVC resultBlock:block];
     }];
 }
 
@@ -55,23 +60,23 @@ static ApiManager *apiManager;
     [self successSettings:dict viewController:vc resultBlock:block];
 }
 
-- (void)successSettings:(NSDictionary *)data viewController:(nullable BaseController *)vc resultBlock:(DataResultBlock)block {
+- (void)successSettings:(NSDictionary *)data viewController:(nullable BaseController *)baseVC resultBlock:(DataResultBlock)block {
     if (!data) return;//has_next
 //    if ([[data objectForKey:@"code"] integerValue] == 200) {
     BOOL isHaveData = [data[@"meta"][@"has_next"] boolValue];
-    vc.errorView.hidden = isHaveData;
+    baseVC.errorView.hidden = isHaveData;
     if (isHaveData) {
         if (block) block(data, nil);
     }else {
         NSString *message = [NSString stringWithFormat:@"%@",[data objectForKey:@"message"]];
-        if (vc) {
-            vc.errorView.errorLabel.text = message;
-            __weak __typeof(&*vc) weakVc = vc;
-            vc.errorView.reloadDataBlock = ^{
+        if (baseVC) {
+            baseVC.errorView.errorLabel.text = message;
+            __weak __typeof(&*baseVC) weakVc = baseVC;
+            baseVC.errorView.reloadDataBlock = ^{
                 [weakVc loadDisplayData];
             };
         }else {
-            [ProgressHUD showStatusProgress:vc.view text:message status:1];
+            [ProgressHUD showStatusProgress:baseVC.view text:message status:1];
         }
         NSError *error = [NSError errorWithDomain:CustomErrorDomain code:-1000 userInfo:nil];
         if (block) block(data, error);
